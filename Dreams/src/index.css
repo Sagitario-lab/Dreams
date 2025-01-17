@@ -1,0 +1,27 @@
+:root {
+  background-color: #090909;
+}
+
+body{
+  margin: 0;
+}
+
+
+.multilineTruncate {
+  display: -webkit-box;           
+  -webkit-line-clamp: 3;         
+  -webkit-box-orient: vertical;   
+  overflow: hidden;               
+  text-overflow: ellipsis;        
+  color: white !important;
+  text-transform: lowercase;
+  
+}
+
+.multilineTruncate::first-letter {
+  text-transform: uppercase; 
+}
+
+.tiendaTitulo{
+  text-decoration: none;
+}
