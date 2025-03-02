@@ -2,7 +2,6 @@ import { Grid2 } from "@mui/material";
 import axios from "axios"
 import { useEffect, useState } from "react"
 import { Card } from "../../components/NotasParche/Card";
-import LazyLoad from 'react-lazyload';
 
 export const AllPatchs = () => {
     const [allPatchs, setAllPatchs] = useState([])

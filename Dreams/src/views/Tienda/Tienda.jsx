@@ -1,7 +1,7 @@
 import { Grid2, Box, Divider, Button } from "@mui/material"
 import '../../index.css'
 import { useNavigate } from "react-router"
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useState } from "react"
 import axios from "axios"
 
 export const Tienda = () => {
@@ -44,7 +44,6 @@ export const Tienda = () => {
                                             </Grid2>
 
                                             <Grid2 size={12} >
-
                                                 <Box
                                                     fontSize={'2.5rem'} fontFamily={'cursive'}
                                                     color={'white'} display={'flex'} justifyContent={'center'}
@@ -52,12 +51,15 @@ export const Tienda = () => {
                                                 >
                                                     {data.title}
                                                 </Box>
+
                                                 <Box
                                                     fontSize={'2rem'} color={'gray'}
                                                     display={'flex'} justifyContent={'center'}>
                                                     ${data.price}
                                                 </Box>
+
                                                 <Divider />
+
                                                 <Box
                                                     height={'150px'} color={'white'} bgcolor={'red'}
                                                     overflow={'hidden'} textOverflow={'ellipsis'} whiteSpace={'nowrap'}
